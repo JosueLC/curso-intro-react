@@ -9,10 +9,10 @@
 // import './App.css';
 
 const todos = [
-  {text:"Curso Intro React"},
-  {text:"Curso Advance React"},
-  {text:"Portfolio with React"},
-  {text:"SIF with React"}
+  {text:"Curso Intro React", completed:false},
+  {text:"Curso Advance React", completed:false},
+  {text:"Portfolio with React", completed:false},
+  {text:"SIF with React", completed:false}
 ];
 
 function App() {
@@ -22,7 +22,11 @@ function App() {
     <ToDoSearch />
     <ToDoList>
         {todos.map(todo => (
-          <ToDoItem key={todos.indexOf(todo)} text={todo.text}/>
+          <ToDoItem
+            key={todos.indexOf(todo)}
+            text={todo.text}
+            completed={todo.completed}
+          />
         ))}
       </ToDoList>
       <CreateToDoButton />
