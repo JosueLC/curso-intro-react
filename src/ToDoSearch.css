@@ -1,0 +1,10 @@
+.ToDoSearch {
+    height: 30px;
+    width:80%;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.ToDoSearch:focus {
+    outline-color: var(--powder-blue);
+}

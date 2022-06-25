@@ -6,23 +6,29 @@
  import {ToDoItem} from './ToDoItem';
  import {CreateToDoButton} from './CreateToDoButton';
 
-// import './App.css';
+import './App.css';
 
 const todos = [
-  {text:"Curso Intro React"},
-  {text:"Curso Advance React"},
-  {text:"Portfolio with React"},
-  {text:"SIF with React"}
+  {text:"Curso Intro React", completed:true},
+  {text:"Curso Advance React", completed:false},
+  {text:"Portfolio with React", completed:false},
+  {text:"SIF with React", completed:false}
 ];
 
 function App() {
   return (
     <React.Fragment>
-    <ToDoCounter />
-    <ToDoSearch />
+      <header className="App-header">
+        <ToDoCounter />
+        <ToDoSearch />
+      </header>
     <ToDoList>
         {todos.map(todo => (
-          <ToDoItem key={todos.indexOf(todo)} text={todo.text}/>
+          <ToDoItem
+            key={todos.indexOf(todo)}
+            text={todo.text}
+            completed={todo.completed}
+          />
         ))}
       </ToDoList>
       <CreateToDoButton />
