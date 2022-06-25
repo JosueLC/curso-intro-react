@@ -1,15 +1,8 @@
 .ToDoSearch {
-    background: var(--powder-blue);
-    border-radius: 2px;
-    border: 2px solid var(--celadon-blue);
-    margin: 0 24px 0;
-    height: 64px;
-    width: calc(100% - 62px);
-    font-size: 24px;
-    text-align: center;
-    font-weight: 400;
-    color: var(--prussian-blue);
-    box-shadow: 0px 5px 50px var(--honeydew);
+    height: 30px;
+    width:80%;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .ToDoSearch:focus {
