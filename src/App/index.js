@@ -1,10 +1,10 @@
  import React from 'react';
 
- import {ToDoCounter} from './ToDoCounter';
- import {ToDoSearch} from './ToDoSearch';
- import {ToDoList} from './ToDoList';
- import {ToDoItem} from './ToDoItem';
- import {CreateToDoButton} from './CreateToDoButton';
+ import {ToDoCounter} from '../ToDoCounter';
+ import {ToDoSearch} from '../ToDoSearch';
+ import {ToDoList} from '../ToDoList';
+ import {ToDoItem} from '../ToDoItem';
+ import {CreateToDoButton} from '../CreateToDoButton';
 
 import './App.css';
 
