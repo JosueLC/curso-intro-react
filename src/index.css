@@ -6,6 +6,7 @@
   --rich-black-fogra-39: #0a0a0aff;
   --white: #ffffffff;
   --gray: #a0a0c0ff;
+  --russian-violet-transparent: #15004460;
 }
 #root {
   display:flex;
