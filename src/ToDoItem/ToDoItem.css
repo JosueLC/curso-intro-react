@@ -30,11 +30,11 @@
   .Icon-check {
     position: absolute;
     left: 12px;
-    background-image: url("./pending.svg");
+    background-image: url("../images/pending.svg");
     background-repeat: no-repeat;
   }
   .Icon-check--active {
-    background-image: url("./success.svg");
+    background-image: url("../images/success.svg");
   }
   
   .Icon-delete {
@@ -43,9 +43,9 @@
     right: 0;
     height: 30px;
     width: 30px;
-    background-image: url("./trash.svg");
+    background-image: url("../images/trash.svg");
     background-repeat: no-repeat;
   }
   .Icon-delete:hover {
-    background-image: url("./trash-red.svg");
+    background-image: url("../images/trash-red.svg");
   }
