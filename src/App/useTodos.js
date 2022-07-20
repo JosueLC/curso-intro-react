@@ -1,9 +1,7 @@
 import React from 'react';
 import {useLocalStorage} from './useLocalStorage';
 
-const ToDoContext = React.createContext();
-
-function ToDoProvider(props) {
+function useTodos() {
     const localStorageKey = 'cIntroReact-todos-v1';
     const {
         item:todos,
@@ -43,8 +41,7 @@ function ToDoProvider(props) {
         setTodos(updatedTodos);
     }
     return (
-        <ToDoContext.Provider
-            value={{
+        {
                 loadingState,
                 errorState,
                 addToDo,
@@ -57,11 +54,8 @@ function ToDoProvider(props) {
                 deleteToDo,
                 modalState,
                 setModalState
-            }}
-        >
-            {props.children}
-        </ToDoContext.Provider>
+            }
     );
 }
 
-export {ToDoContext,ToDoProvider};
+export { useTodos };

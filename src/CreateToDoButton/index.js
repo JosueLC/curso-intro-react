@@ -1,9 +1,7 @@
 import React from 'react';
-import { ToDoContext } from '../ToDoContext';
 import "./CreateToDoButton.css";
 
-function CreateToDoButton(){
-    const {modalState,setModalState} = React.useContext(ToDoContext);
+function CreateToDoButton({modalState,setModalState}){
     const onClickButton = () => {
         setModalState(!modalState);
     };

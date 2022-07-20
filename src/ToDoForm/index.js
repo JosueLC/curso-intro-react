@@ -1,10 +1,8 @@
 import React from 'react';
-import { ToDoContext } from '../ToDoContext';
 import './ToDoForm.css';
 
-function ToDoForm() {
+function ToDoForm({addToDo,setModalState}) {
     const [newToDoText,setNewToDoText] = React.useState('');
-    const {addToDo,setModalState} = React.useContext(ToDoContext);
 
     const onChange = (event) => {
         setNewToDoText(event.target.value);
